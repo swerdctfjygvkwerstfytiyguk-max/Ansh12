@@ -1,2 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ma Dernière Vacation</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;family=Fredoka:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        .font-fredoka { font-family: 'Fredoka', sans-serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .wave-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .wave-bottom svg {
+            position: relative;
+            display: block;
+            width: calc(150% + 1.3px);
+            height: 150px;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 overflow-hidden bg-gray-100">
+<!-- Slide Container -->
+<div class="w-[1280px] h-[720px] relative bg-sky-200 overflow-hidden flex flex-col font-poppins text-gray-800">
+<!-- Decorative Sun (Solid Color - No Gradients) -->
+<div class="absolute -top-20 -right-20 w-80 h-80 bg-yellow-300 rounded-full opacity-90 z-0"></div>
+<div class="absolute top-4 right-4 w-40 h-40 bg-yellow-400 rounded-full opacity-80 z-0 flex items-center justify-center">
+<i class="fa-solid fa-sun text-yellow-100 text-6xl animate-pulse"></i>
+</div>
+<!-- Floating Cloud Icons -->
+<div class="absolute top-20 left-20 text-white opacity-60 text-8xl z-0 transform -rotate-12">
+<i class="fa-solid fa-cloud"></i>
+</div>
+<div class="absolute top-40 right-1/3 text-white opacity-40 text-6xl z-0">
+<i class="fa-solid fa-cloud"></i>
+</div>
+<!-- Main Content Grid -->
+<div class="relative z-10 w-full h-full flex items-center justify-between px-20">
+<!-- Left Side: Text Content -->
+<div class="w-1/2 flex flex-col justify-center space-y-8">
+<!-- Badge -->
+<div class="inline-block bg-white px-4 py-2 rounded-full shadow-md w-max transform -rotate-2">
+<p class="text-blue-500 font-bold tracking-wider text-sm uppercase"><i class="fa-solid fa-plane-departure mr-2"></i>Voyage &amp; Souvenirs</p>
+</div>
+<!-- Main Title -->
+<div>
+<h1 class="font-fredoka text-8xl text-blue-900 leading-tight drop-shadow-sm mb-2">
+                        Ma Dernière <br/>
+<span class="text-white text-stroke-blue" style="-webkit-text-stroke: 2px #1e3a8a;">Vacances</span>
+</h1>
+<p class="text-2xl text-blue-800 font-medium ml-2 opacity-90">
+                        Un voyage simple et amusant
+                    </p>
+</div>
+<!-- Student Info Card -->
+<div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border-b-8 border-yellow-400 max-w-lg transform hover:scale-105 transition-transform duration-300">
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-center space-x-4 border-b border-gray-100 pb-2">
+<div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+<i class="fa-solid fa-user"></i>
+</div>
+<div>
+<p class="text-xs text-gray-500 uppercase font-bold">Présenté par</p>
+<p class="text-xl font-bold text-gray-800">[Ton Nom]</p>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+<i class="fa-solid fa-graduation-cap text-sm"></i>
+</div>
+<div>
+<p class="text-xs text-gray-500 uppercase font-bold">Classe</p>
+<p class="text-lg font-semibold text-gray-800">[X]</p>
+</div>
+</div>
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+<i class="fa-regular fa-calendar text-sm"></i>
+</div>
+<div>
+<p class="text-xs text-gray-500 uppercase font-bold">Date</p>
+<p class="text-lg font-semibold text-gray-800">06/01/2026</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Image/Visuals -->
+<div class="w-5/12 h-[500px] relative">
+<!-- Polaroid Style Frame -->
+<div class="absolute inset-0 bg-white p-4 pb-16 rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500 z-20">
+<div class="w-full h-full overflow-hidden rounded bg-gray-200 relative">
+<!-- High quality beach image from Unsplash -->
+<img alt="Beautiful Beach" class="w-full h-full object-cover" src="https://page.gensparksite.com/slides_images/cfc63a2f82695a843544fb43764fc353.webp"/>
+<div class="absolute bottom-0 left-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-tr-lg">
+                            Souvenir d'été
+                         </div>
+</div>
+<div class="absolute bottom-4 left-0 w-full text-center">
+<p class="font-handwriting text-2xl text-gray-600 font-fredoka">Le Paradis !</p>
+</div>
+</div>
+<!-- Decorative Elements behind the photo -->
+<div class="absolute -bottom-10 -right-10 text-yellow-500 text-9xl z-30 drop-shadow-lg transform rotate-12">
+<i class="fa-solid fa-umbrella-beach"></i>
+</div>
+<div class="absolute -top-10 -left-10 text-red-400 text-6xl z-10 animate-bounce" style="animation-duration: 3s;">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+</div>
+</div>
+<!-- Wave SVG at bottom -->
+<div class="wave-bottom z-0">
+<svg data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-yellow-200" d="M985.66,92.83C906.67,72,823.78,31,432.84,26.11,214.34,23.3,0,92.65,0,92.65V150H1200V150S1162.13,118.42,985.66,92.83Z"></path>
+<path class="fill-white opacity-30" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+</svg>
+</div>
+</div>
+</body>
+</html>
 
 
